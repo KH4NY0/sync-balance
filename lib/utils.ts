@@ -65,10 +65,10 @@ export const formatDateTime = (dateString: Date) => {
   };
 };
 
-export function formatAmount(amount: number): string {
-  const formatter = new Intl.NumberFormat("en-US", {
+export function formatAmount(amount: React.JSX.Element): string {
+  const formatter = new Intl.NumberFormat("en-ZA", {
     style: "currency",
-    currency: "USD",
+    currency: "ZAR",
     minimumFractionDigits: 2,
   });
 
